@@ -1,0 +1,63 @@
+<html lang="en"> 
+<head> 
+	<title>Simple Speed Typer</title> 
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <style>
+        body {
+            background-image: url("https://i.postimg.cc/d31wdVxx/20240206-075954.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+</head>
+<body>
+<div class="container"> 
+	<div class="heading"> 
+	Typing Test
+	</div>
+	<div class="header"> 
+	<div class="wpm"> 
+		<div class="header_text">WPM</div> 
+		<div class="curr_wpm">100</div> 
+	</div> 
+	<div class="cpm"> 
+		<div class="header_text">CPM</div> 
+		<div class="curr_cpm">100</div> 
+	</div> 
+	<div class="errors"> 
+		<div class="header_text">Errors</div> 
+		<div class="curr_errors">0</div> 
+	</div> 
+	<div class="timer"> 
+		<div class="header_text">Time</div> 
+		<div class="curr_time">60s</div> 
+	</div> 
+	<div class="accuracy"> 
+		<div class="header_text">Accuracy%</div> 
+		<div class="curr_accuracy">100</div> 
+	</div> 
+	</div> 
+
+	<div class="quote"> 
+	Click on the area below to start or can resize it. 
+	</div> 
+	<textarea class="input_area"
+	placeholder="start typing here..."
+	oninput="processCurrentText()"
+	onfocus="startGame()"> 
+	</textarea> 
+	<button class="restart_btn"
+	onclick="resetValues()"> 
+	Restart 
+	</button> 
+</div> 
+
+<!-- link the JavaScript file here -->
+<script src="Typing%20Speed%20Test.js"> 
+</script> 
+</body> 
+</html> 
